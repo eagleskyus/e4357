@@ -1,0 +1,89 @@
+Firmware essentials HW #1
+Instructor: ShengLiang
+Date: 10/11/2014
+Student: Ken Ye
+
+C program 1:
+void *memcpy(void *dest, const void *src, size_t n);
+{
+    uint8_t *pdest = (uint8_t *) dest;
+	uint8_t *psrc  = (uint8_t *) src;
+	
+	//word size copy
+	int num = (n / sizeof(uint32_t));
+	for(int idx = 0; idx < num; idx++)
+	{
+		*((uint32_t *) pdest) = *((uint32_t *) psrc);
+		pdest += sizeof(uint32_t);
+		psrc  += sizeof(uint32_t);
+	}
+	
+	//byte size copy
+	num = (n % sizeof(uint32_t));
+	for(int idx = 0; idx < num; idx++)
+	{
+		*pdest = *psrc;
+		pdest++;
+		psrc++;
+	}
+}
+
+C++ program 2:
+/*Magic Squares: the function produces NxN matrix where
+N is some positive odd integer. The matrix contains the 
+value 1 to N*N. The sum of each row, each column and the
+two main diagonals are all equal. Not only does this
+function produces matrix, it also computes totals for
+each row, column, and two diagonals.
+*/
+
+void magic_sqr::eval()
+{
+  
+	ptmatrix = new int*[input + 1];
+	for (row = 0; row <= input; row++)
+		ptmatrix[row] = new int[input++];
+		
+	for (row =0; row <=input; row++)
+	  for (col =0; col <= input; col++)
+		*(ptmatrix[row] + col) = 0;
+		
+	row = 1;
+	col = input/2 + 1;
+	otherdiag = 0;
+	
+  int value;
+  for(value = 1; value <= input * input; value++)
+  {
+	
+	if(ptmatrix[row][col] > 0)
+	{
+		row += 2;			//move value in matrix position
+		if(row > input)
+			row -= input;
+			
+		col--;
+		if(col < 1)
+			col = input;
+	}
+	
+	ptmatrix[row][col] = value;  //assign value to location
+	
+	ptmatrix[0][col] += value;	// add to column total
+	ptmatrix[row][0] += value;	// add to row total
+	if (row == col)
+		ptmatrix[0][0] += value; // add to diagnal total
+	if (row+col == input + 1)
+		otherdiag += value;
+		
+//determine where new row and col are
+	row--;
+	if (row < 1)
+		row = input;
+	
+	col++;
+	if(col > input)
+		col = 1;
+	}
+}
+

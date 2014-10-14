@@ -1,0 +1,24 @@
+hw1 hardware
+
+Ken Ye
+
+
+In samsung galaxy S4, there is Atmel's UC128L5-U 32-bit microcontroller with 128KB flash memory.
+
+http://www.atmel.com/Images/Atmel-32142-32-bit-Flash-MCU-ATUCL3U-L4U_summary.pdf
+
+ATUC128L5 is a customized version of UC128L4U, maybe different package.
+
+So UC128L4U datasheet is analyzed instead due to no L5U datasheet available.
+
+CPU: 32-bit AVR single-cycle RISC, MIPS instruction set
+Clock frequency: • Up to 64DMIPS Running at 50MHz from Flash (1 Flash Wait State)
+				 • Up to 36DMIPS Running at 25MHz from Flash (0 Flash Wait State)
+
+Cache size: No caches implemented!
+Flash Memory: 25Mhz SPI flash, 128KB
+SRAM: 32KB
+Interface: TWI and SPI
+Oscillator: 32Khz
+GPIO pins: 51
+Power supply: 1.62-3.6v
