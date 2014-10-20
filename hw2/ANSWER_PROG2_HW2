@@ -1,0 +1,27 @@
+Total Hours Spent: 1.5/1.5
+		   Actual/Expect
+
+4357 Embedded Firmware Essentials
+- Program Assignment #2
+
+1. Hello World program:
+
+   a.	Exporting to uVision (Windows)
+   
+   Text files: main.cpp(12 line code); main.d(62 line code);
+   Binary files: HelloWorld_LPC1768.bin; HelloWorld.axf; HelloWorld.Inp; HelloWorld.map; HelloWorld_mbed NXP LPC1768.dep; main.crf
+   
+   
+   
+   b.	Exporting to GCC ARM Embedded (Linux)
+   
+   Text files: Makefile(56 line code); main.cpp(12 line code); main.d(122 line code)
+   Binary files: HelloWorld.bin; HelloWorlld.elf; main.o
+
+   
+
+2. binwalk, objdump, nm to Analysis binaries files
+   http://binwalk.org/
+
+3. Optional: git clone https://github.com/mbedmicro/mbed
+   
