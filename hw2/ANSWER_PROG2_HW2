@@ -12,8 +12,7 @@ Total Hours Spent: 1.5/1.5
    Binary files: HelloWorld_LPC1768.bin; HelloWorld.axf; HelloWorld.Inp; HelloWorld.map; HelloWorld_mbed NXP LPC1768.dep; main.crf;
    		 main.o
    
-   Memory Map of the image
-   Image Entry point : 0x000000c5
+   Entry point address: 0xc5
    
    b.	Exporting to GCC ARM Embedded (Linux)
    
