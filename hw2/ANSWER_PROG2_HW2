@@ -9,19 +9,23 @@ Total Hours Spent: 1.5/1.5
    a.	Exporting to uVision (Windows)
    
    Text files: main.cpp(12 line code); main.d(62 line code);
-   Binary files: HelloWorld_LPC1768.bin; HelloWorld.axf; HelloWorld.Inp; HelloWorld.map; HelloWorld_mbed NXP LPC1768.dep; main.crf
+   Binary files: HelloWorld_LPC1768.bin; HelloWorld.axf; HelloWorld.Inp; HelloWorld.map; HelloWorld_mbed NXP LPC1768.dep; main.crf;
+   		 main.o
    
-   
+   Memory Map of the image
+   Image Entry point : 0x000000c5
    
    b.	Exporting to GCC ARM Embedded (Linux)
    
    Text files: Makefile(56 line code); main.cpp(12 line code); main.d(122 line code)
    Binary files: HelloWorld.bin; HelloWorlld.elf; main.o
-
+   
+   Entry point address: 0x1f5
+   
+   All files in a) and b) are different except for main.cpp
    
 
-2. binwalk, objdump, nm to Analysis binaries files
-   http://binwalk.org/
+2. Finally installed binwalk successfully and did bin analysis on HelloWorld, not much sense being made.
 
-3. Optional: git clone https://github.com/mbedmicro/mbed
+3. Don't know what this is for:  git clone https://github.com/mbedmicro/mbed
    
