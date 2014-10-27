@@ -1,6 +1,18 @@
 
 4357 Embedded Firmware Essentials
 
+
+Finished exercises 14.1 and 14.3.
+But no external breadboard and LED yet, so I used internal LED1 and LED2 instead.
+
+Ken Ye
+
+10_26
+
+
+
+
+
 - Program Assignment #3 10 points
 - Objective
    1. Understand different between C++ and C APIs in mbed environment
