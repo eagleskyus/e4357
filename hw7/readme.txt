@@ -1,3 +1,13 @@
+Checked out elua
+HW done
+
+11/24/2014
+Ken Ye
+
+
+
+
+
 Objective: Study elua development environment
 
 Check out: https://github.com/Shengliang/elua.git
