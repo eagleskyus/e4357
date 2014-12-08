@@ -1,0 +1,18 @@
+Q1:
+LPC1768 has two MCUs. USB interface MCU and NXP LPC1768 MCU.
+
+Q2:
+Flash memory onboard LPC1768 is 512KB flash NOR memory.
+
+Q3:
+1. Update firmware for LPC1768 MCU.
+2. Drag and drop firmware binary.
+3. Debug firmware program via PC terminal
+
+Q4:
+PHYTER Mini LS Commercial Temperature Single Port 10/100 Mb/s Ethernet Transceiver
+TI DP83848J
+
+Q5:
+GPIO 0x2009C000 - 0x2009FFFF
+

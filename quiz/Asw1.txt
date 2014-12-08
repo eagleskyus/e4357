@@ -1,0 +1,32 @@
+Q1:
+compile error.
+It should be Arr[3]=7;
+
+Q2:
+const int *px: px is a pointer points to a const int, px is variable.
+int const *px: px is a the same as "const int *px"
+int * const px: px is a const pointer point to an int, px can not change
+
+case 1 & 2 are ok, case 3 is error, trying to change a constant px
+
+Q3:
+void reg_set(volatile unsigned int *pReg, int ith)
+{
+	*pReg |= (1<<ith);
+}
+
+void reg_clear(volatile unsigned int *pReg, int ith)
+{
+	*pReg &= ~(1<<ith);
+}
+
+Q4:
+void swap(unsigned int * px, unsigned int *py) 
+{ 
+	unsigned int temp = *px;
+	*px = *py;
+	*py = temp;
+}
+
+Q5:
+Will print out 12 if used as C code, error in C++ 

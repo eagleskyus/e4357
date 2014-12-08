@@ -1,0 +1,19 @@
+Q1:
+LED1 mask = 2621144U
+pin 32 in GPIO port 1.
+
+FIO1SET address is 0x2009C038 port 1.
+
+Q2:
+RS232 frame is One start bit, 8 data bits(no parity bit), 1stop bit
+
+Q3:
+Start: when SCL is high, SDA goes from High to Low transition.
+STOP: When SCL is high, SDA goes from LOW to HIGH transition.
+
+Q4:
+I2C ACK is SDDA LOW.
+
+Q5:
+DDR3 Write Leveling is to allow some mechanism for the memory controller to 
+adjust internal DQS to compensate for unbalanced loading on the board for write operations.
